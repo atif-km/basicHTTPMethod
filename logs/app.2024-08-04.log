@@ -1,0 +1,115 @@
+2024-08-04 00:08:18 INFO  c.e.ecommerce.EcommerceApplication - Starting EcommerceApplication using Java 17.0.8 with PID 14828 (C:\Microspace\ecommerce\target\classes started by atifk in C:\Microspace\ecommerce)
+2024-08-04 00:08:18 DEBUG c.e.ecommerce.EcommerceApplication - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-04 00:08:18 INFO  c.e.ecommerce.EcommerceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-04 00:08:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-04 00:08:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-08-04 00:08:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-04 00:08:18 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-04 00:08:18 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-04 00:08:18 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-04 00:08:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 388 ms
+2024-08-04 00:08:18 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-08-04 00:08:18 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-04 00:08:18 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-04 00:08:18 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-08-04 00:08:20 INFO  c.e.ecommerce.EcommerceApplication - Starting EcommerceApplication using Java 17.0.8 with PID 14828 (C:\Microspace\ecommerce\target\classes started by atifk in C:\Microspace\ecommerce)
+2024-08-04 00:08:20 DEBUG c.e.ecommerce.EcommerceApplication - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-04 00:08:20 INFO  c.e.ecommerce.EcommerceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-04 00:08:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-04 00:08:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2024-08-04 00:08:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-04 00:08:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-04 00:08:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-04 00:08:21 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-04 00:08:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 294 ms
+2024-08-04 00:08:21 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-04 00:08:21 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-04 00:08:21 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-04 00:08:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-08-04 00:08:21 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6795f2c4
+2024-08-04 00:08:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-08-04 00:08:21 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-04 00:08:21 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-04 00:08:21 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-04 00:08:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-04 00:08:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-04 00:08:21 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-04 00:08:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-08-04 00:08:21 INFO  c.e.ecommerce.EcommerceApplication - Started EcommerceApplication in 0.701 seconds (process running for 25103.202)
+2024-08-04 00:08:21 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-04 00:08:45 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-04 00:08:45 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-04 00:08:45 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-04 00:08:45 INFO  c.e.e.controller.UserController - Fetching details for user with id  3
+2024-08-04 00:08:59 INFO  c.e.e.controller.UserController - Fetching details for user with id  3
+2024-08-04 00:10:20 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 23 class path changes (0 additions, 5 deletions, 18 modifications)
+2024-08-04 00:10:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-04 00:10:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-08-04 00:10:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-08-04 00:11:59 INFO  c.e.ecommerce.EcommerceApplication - Starting EcommerceApplication using Java 17.0.8 with PID 14828 (C:\Microspace\ecommerce\target\classes started by atifk in C:\Microspace\ecommerce)
+2024-08-04 00:11:59 DEBUG c.e.ecommerce.EcommerceApplication - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-04 00:11:59 INFO  c.e.ecommerce.EcommerceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-04 00:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-04 00:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2024-08-04 00:11:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-08-04 00:11:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-04 00:11:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-04 00:11:59 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-04 00:11:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 280 ms
+2024-08-04 00:12:00 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-04 00:12:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-04 00:12:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-04 00:12:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2024-08-04 00:12:00 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1567afed
+2024-08-04 00:12:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2024-08-04 00:12:00 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-04 00:12:00 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-04 00:12:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-04 00:12:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-04 00:12:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-04 00:12:00 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-08-04 00:12:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-08-04 00:12:00 INFO  c.e.ecommerce.EcommerceApplication - Started EcommerceApplication in 0.566 seconds (process running for 25321.884)
+2024-08-04 00:12:00 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-08-04 00:12:13 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-04 00:12:13 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-04 00:12:13 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-08-04 00:12:13 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-08-04 00:14:01 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-08-04 01:06:41 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=4m10s909ms332µs800ns).
+2024-08-04 04:03:59 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h52m47s663ms230µs800ns).
+2024-08-04 04:25:20 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=21m21s538ms677µs500ns).
+2024-08-04 06:23:52 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h58m31s903ms10µs).
+2024-08-04 08:14:51 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h50m58s635ms427µs500ns).
+2024-08-04 09:19:58 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1m7s371ms772µs200ns).
+2024-08-04 11:17:44 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h53m16s419ms85µs800ns).
+2024-08-04 11:31:56 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=14m12s27ms940µs800ns).
+2024-08-04 12:15:15 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=6m18s886ms556µs700ns).
+2024-08-04 12:53:50 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=16m4s650ms954µs600ns).
+2024-08-04 13:43:45 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=32m55s396ms217µs900ns).
+2024-08-04 14:49:43 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h2m55s363ms266µs400ns).
+2024-08-04 15:00:51 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=10m37s870ms780µs500ns).
+2024-08-04 15:09:29 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m37s710ms194µs200ns).
+2024-08-04 16:42:59 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=41m38s285ms352µs200ns).
+2024-08-04 22:48:54 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5h37m2s870ms642µs200ns).
+2024-08-04 23:54:49 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=18m22s18ms551µs300ns).
